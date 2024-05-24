@@ -15,7 +15,13 @@ body, html {
   line-height: 1.8;
   font-weight: 100;
 }
+body {
+  background-color: #fff;
 
+}
+p {
+  font-size: medium;
+}
 /* Create a Parallax Effect */
 .bgimg-1, .bgimg-2, .bgimg-3 {
   background-attachment: fixed;
@@ -26,7 +32,8 @@ body, html {
 
 /* First image (Logo. Full height) */
 .bgimg-1 {
-  background-color: #f0cfba;
+  background-image: url('./kuvat/bannerikukat\ copy\ 2.png');
+  opacity: 0,2;
   min-height: 30%;
   font-family: "Holingston", sans-serif;
   
@@ -136,10 +143,10 @@ body, html {
     <a href="#" class="m-bar-item m-button">SEARCH</a>
   </div>
 </div>
-<!-- First Parallax Image with Logo Text -->
+<!-- First Parallax Image  -->
 <div class="bgimg-1 m-display-container m-opacity-min" id="home">
   <div class="m-display-middle" style="white-space:nowrap;">
-    <span class="m-center m-padding m-wide m-animate-opacity" style="font-size: 60px"><div class="handwriting-container">
+    <span class="m-center m-padding m-wide m-animate-opacity" style="font-size: 70px"><div class="handwriting-container">
       <span id="animated-text"></span>
   </div>
 
@@ -154,7 +161,7 @@ body, html {
   <div class="m-row">
     <div class="m-col m6 m-center m-padding-large">
       <!-- <p><b><i class="fa fa-user w3-margin-right"></i>MAARIT</b></p><br> -->
-      <img src="kuvat/mina.jpg" class="m-round m-image m-opacity m-hover-opacity-off -muoto" alt="Photo of Me" width="500" height="333">
+      <img src="kuvat/mina.jpg" class="m-round m-image m-hover-opacity-off -muoto" alt="Photo of Me" width="500" height="333">
     </div>
 
     <!-- Hide this text on small devices -->
@@ -292,9 +299,8 @@ body, html {
     </div>
     
       
-    <button class="m-button m-padding-large m-light-grey" style="margin-top:64px">LATAA LISÄÄ</button>
+   
   </div>
-  
 </div>
 
 <!-- Modal for full size images on click-->
@@ -329,21 +335,7 @@ body, html {
         <i class="fa fa-phone fa-fw m-hover-text-black m-xlarge m-margin-right"></i> Puhelin: +358<br>
         <i class="fa fa-envelope fa-fw m-hover-text-black m-xlarge m-margin-right"></i> Sähköposti: mail@mail.com<br>
       </div>
-      soita tai jätä minulle viesti:</p>
-      <form action="/action_page.php" target="_blank">
-        <div class="m-row-padding" style="margin:0 -16px 8px -16px">
-          <div class="m-half">
-            <input class="m-input m-border" type="text" placeholder="Nimi" required name="Nimi">
-          </div>
-          <div class="m-half">
-            <input class="m-input m-border" type="text" placeholder="Sähköposti" required name="Sähköposti">
-          </div>
-        </div>
-        <input class="m-input m-border" type="text" placeholder="Viesti" required name="Viesti">
-        <button class="m-button m-koralli m-right m-section" type="submit">
-          <i class="fa fa-paper-plane"></i> LÄHETÄ VIESTI
-        </button>
-      </form>
+      
     </div>
   </div>
 </div>
@@ -353,7 +345,6 @@ body, html {
   <a href="#home" class="m-button m-koralli"><i class="fa fa-arrow-up m-margin-right"></i>Sivun alkuun</a>
   <div class="m-xlarge m-section">
     <i class="fa fa-instagram m-hover-opacity"></i>
-    <i class="fa fa-linkedin m-hover-opacity"></i>
   </div>
 </footer>
  
